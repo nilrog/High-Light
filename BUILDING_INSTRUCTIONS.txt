@@ -1,0 +1,23 @@
+Building the High-Light Plugin
+==============================
+
+Just try building the High-Light plugin in Xcode. If that works,
+congratulations, you don't need to do a thing!
+
+If that doesn't work, it probably failed because we don't know where the
+RWPluginUtilities.framework is. That's a framework that's embedded inside
+the RapidWeaver.app bundle, or available for download from Realmac
+Softwares website.
+
+* The project expects that the RapidWeaver.app is located in the standard
+  application folder. If that is the case you should not need to do
+  anything else to be able to compile this project.
+
+The project is already prepared with the "copy" script that will copy the
+plugin to the ~/Library/Application Support/RapidWeaver folder so you can
+easily test the plugin.
+
+That should be about it. Email me if you're still having problems building
+the thing.
+
+- Roger

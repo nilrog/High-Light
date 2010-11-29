@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                goVisitMyWebsite = id; 
+                theSheetBrowse = id; 
+                theSheetCancel = id; 
+                theSheetOK = id; 
+            }; 
+            CLASS = HighLightPlugin; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                licenseText = NSTextField; 
+                settingsWindow = NSWindow; 
+                sourceHighLightPath = NSTextField; 
+                sourceHighLightText = NSTextField; 
+                tabsText = NSTextField; 
+                useStaticMenuBtn = NSButton; 
+                versionText = NSTextField; 
+            }; 
+            SUPERCLASS = RWAbstractPlugin; 
+        }, 
+        {CLASS = RWAbstractPlugin; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

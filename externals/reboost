@@ -1,0 +1,19 @@
+#!/bin/sh
+
+[ "$USER" = "andrep" ] && boost_path="$HOME"/Code/other/boost_1_33_1
+[ -n "$1" ] && boost_path="$1"
+
+if [ -z "$boost_path" ]; then
+  cat << END
+Can't find boost.  Please specify it as the first argument to the reboost
+command, e.g.
+
+  $0 ~/Code/boost-1.33.1
+END
+  fi
+
+"$boost_path"/tools/bcp/run/bcp \
+  --boost="$boost_path" \
+  --scan source-highlight/src/*.{h,cpp} \
+  boost-1.33.1-minimal
+

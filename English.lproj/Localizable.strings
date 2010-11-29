@@ -1,0 +1,37 @@
+
+"PluginName" = "High-Light";
+"PluginDescription" = "Does exactly what you'd expect, high-lights code :)";
+
+// Menu
+"RWFormatMenu" = "Format";
+"RWHTMLMenu" = "HTML";
+"MenuName" = "High-Light";
+"MenuEmptyWhy" = "Why is the menu empty?";
+"MenuEmptyError" = "Error parsing styles!";
+"MenuItemLineNumber" = "Line numbers";
+"MenuItemGenerateAnchor" = "Generate anchors";
+"MenuItemInlineCss" = "Inline CSS";
+"MenuItemHelp" = "Help...";
+"MenuItemSettings" = "Settings...";
+
+// Alert sheet
+"OKButton" = "OK";
+"CancelButton" = "Cancel";
+"DownloadButton" = "Download";
+"WhyIsTheMenuEmptyText" = "The command 'source-highlight' was not found in your system. This command is needed by this plugin and everything is disabled until you locate this command. If you know that you have installed it open the 'Settings' and locate the application.\r\rIf you have not installed it you can get a special version for use with this plugin by clicking on the \"Download\" button.\r\rOr you can download a generic version from either of these two places:\r\rhttp://macports.org/\rhttp://fink.sf.net/\r\rWhen you have downloaded and installed 'source-highlight' open the settings and locate the command. If you have downloaded the special version you only have restart RapidWeaver and the command should be found automatically.";
+"HighLightError" = "High-Light error";
+
+// Error messages
+"ErrorParsingPlist" = "Failed to parse the bundled plist file:\r%@";
+"ErrorQueringLangList" = "Failed to query source-highlight for --lang-list:\r%@";
+"NotAValidSourceHighLight" = "The file '%@' is not a valid 'source-highlight' binary.\r\rPlease select a valid binary.";
+"NotApplicable" = "n/a";
+"NonSupportedLanguange" = "High-Light was unable to convert the text according to the applied language: %@";
+"LicenseFileNotFound" = "The file LICENSE was not found inside the bundle!!!";
+"LicenseFileCorrupt" = "The file LICENSE seems to be corrupt!!!";
+
+// Error messages for HTML output
+"NonSupportedLanguageOutput" = "############################################################<br />WARNING: High-Light was unable to convert the text<br />according to the applied language: %@<br />############################################################";
+
+// ToolTip
+"ToolTipWithLineNumbers" = "with linenumbers";

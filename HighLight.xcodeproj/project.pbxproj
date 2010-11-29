@@ -1,0 +1,1118 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		445256760C2AB85600BC2CCF /* source-highlight */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 445256790C2AB87400BC2CCF /* Build configuration list for PBXAggregateTarget "source-highlight" */;
+			buildPhases = (
+				445256750C2AB85600BC2CCF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "source-highlight";
+			productName = "source-highlight";
+		};
+		44D0010A0DEB423400B678DD /* Create DMG */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 44D001130DEB426300B678DD /* Build configuration list for PBXAggregateTarget "Create DMG" */;
+			buildPhases = (
+				44D001090DEB423400B678DD /* ShellScript */,
+			);
+			dependencies = (
+				44D0010C0DEB424500B678DD /* PBXTargetDependency */,
+			);
+			name = "Create DMG";
+			productName = "Create DMG";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		44187CFD0B49657300717BD8 /* styles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44187CFC0B49657300717BD8 /* styles.plist */; };
+		4429B4890C80B77B00E188D7 /* donate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4429B4880C80B77B00E188D7 /* donate.gif */; };
+		44429FE00B76252900EA3073 /* styles_v2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44429FDF0B76252900EA3073 /* styles_v2.plist */; };
+		4442A0E80B799F7300EA3073 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 4442A0E70B799F7300EA3073 /* AUTHORS */; };
+		4442A0F70B7A569800EA3073 /* tags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4442A0F60B7A569800EA3073 /* tags.plist */; };
+		446329740C83D29F006683DA /* RWPluginUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446329730C83D29F006683DA /* RWPluginUtilities.framework */; };
+		446329910C83D363006683DA /* css_common.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463297A0C83D362006683DA /* css_common.outlang */; };
+		446329920C83D363006683DA /* docbook.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463297B0C83D362006683DA /* docbook.outlang */; };
+		446329930C83D363006683DA /* docbookdoc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463297C0C83D362006683DA /* docbookdoc.outlang */; };
+		446329940C83D363006683DA /* esc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463297D0C83D362006683DA /* esc.outlang */; };
+		446329950C83D363006683DA /* html_common.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463297E0C83D362006683DA /* html_common.outlang */; };
+		446329960C83D363006683DA /* html_notfixed.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463297F0C83D362006683DA /* html_notfixed.outlang */; };
+		446329970C83D363006683DA /* html.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329800C83D362006683DA /* html.outlang */; };
+		446329980C83D363006683DA /* htmlcss.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329810C83D362006683DA /* htmlcss.outlang */; };
+		446329990C83D363006683DA /* htmldoc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329820C83D362006683DA /* htmldoc.outlang */; };
+		4463299A0C83D363006683DA /* htmltable.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329830C83D362006683DA /* htmltable.outlang */; };
+		4463299B0C83D363006683DA /* javadoc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329840C83D362006683DA /* javadoc.outlang */; };
+		4463299C0C83D363006683DA /* latex.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329850C83D362006683DA /* latex.outlang */; };
+		4463299D0C83D363006683DA /* latexcolor.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329860C83D362006683DA /* latexcolor.outlang */; };
+		4463299E0C83D363006683DA /* latexcolordoc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329870C83D362006683DA /* latexcolordoc.outlang */; };
+		4463299F0C83D363006683DA /* latexdoc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329880C83D362006683DA /* latexdoc.outlang */; };
+		446329A10C83D363006683DA /* texinfo.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463298A0C83D362006683DA /* texinfo.outlang */; };
+		446329A20C83D363006683DA /* xhtml_common.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463298B0C83D362006683DA /* xhtml_common.outlang */; };
+		446329A30C83D363006683DA /* xhtml_notfixed.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463298C0C83D362006683DA /* xhtml_notfixed.outlang */; };
+		446329A40C83D363006683DA /* xhtml.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463298D0C83D362006683DA /* xhtml.outlang */; };
+		446329A50C83D363006683DA /* xhtmlcss.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463298E0C83D362006683DA /* xhtmlcss.outlang */; };
+		446329A60C83D363006683DA /* xhtmldoc.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4463298F0C83D362006683DA /* xhtmldoc.outlang */; };
+		446329A70C83D363006683DA /* xhtmltable.outlang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329900C83D362006683DA /* xhtmltable.outlang */; };
+		446329D60C83D3E1006683DA /* bib.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329A80C83D3E0006683DA /* bib.lang */; };
+		446329D70C83D3E1006683DA /* bison.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329A90C83D3E0006683DA /* bison.lang */; };
+		446329D80C83D3E1006683DA /* c_comment.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329AA0C83D3E0006683DA /* c_comment.lang */; };
+		446329D90C83D3E1006683DA /* c_string.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329AB0C83D3E0006683DA /* c_string.lang */; };
+		446329DA0C83D3E1006683DA /* caml.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329AC0C83D3E0006683DA /* caml.lang */; };
+		446329DB0C83D3E1006683DA /* changelog.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329AD0C83D3E0006683DA /* changelog.lang */; };
+		446329DC0C83D3E1006683DA /* cpp.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329AE0C83D3E0006683DA /* cpp.lang */; };
+		446329DD0C83D3E1006683DA /* csharp.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329AF0C83D3E0006683DA /* csharp.lang */; };
+		446329DE0C83D3E1006683DA /* css.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B00C83D3E0006683DA /* css.lang */; };
+		446329DF0C83D3E1006683DA /* default.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B10C83D3E0006683DA /* default.lang */; };
+		446329E00C83D3E1006683DA /* diff.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B20C83D3E0006683DA /* diff.lang */; };
+		446329E10C83D3E1006683DA /* extreme_comment.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B30C83D3E0006683DA /* extreme_comment.lang */; };
+		446329E20C83D3E1006683DA /* extreme_comment2.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B40C83D3E0006683DA /* extreme_comment2.lang */; };
+		446329E30C83D3E1006683DA /* extreme_comment3.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B50C83D3E0006683DA /* extreme_comment3.lang */; };
+		446329E40C83D3E1006683DA /* flex.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B60C83D3E1006683DA /* flex.lang */; };
+		446329E50C83D3E1006683DA /* fortran.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B70C83D3E1006683DA /* fortran.lang */; };
+		446329E60C83D3E1006683DA /* function.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B80C83D3E1006683DA /* function.lang */; };
+		446329E70C83D3E1006683DA /* html.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329B90C83D3E1006683DA /* html.lang */; };
+		446329E80C83D3E1006683DA /* java.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329BA0C83D3E1006683DA /* java.lang */; };
+		446329E90C83D3E1006683DA /* javascript.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329BB0C83D3E1006683DA /* javascript.lang */; };
+		446329EA0C83D3E1006683DA /* langdef.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329BC0C83D3E1006683DA /* langdef.lang */; };
+		446329EB0C83D3E1006683DA /* latex.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329BD0C83D3E1006683DA /* latex.lang */; };
+		446329EC0C83D3E1006683DA /* log.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329BE0C83D3E1006683DA /* log.lang */; };
+		446329ED0C83D3E1006683DA /* logtalk.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329BF0C83D3E1006683DA /* logtalk.lang */; };
+		446329EE0C83D3E1006683DA /* lua.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C00C83D3E1006683DA /* lua.lang */; };
+		446329EF0C83D3E1006683DA /* m4.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C10C83D3E1006683DA /* m4.lang */; };
+		446329F00C83D3E1006683DA /* makefile.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C20C83D3E1006683DA /* makefile.lang */; };
+		446329F10C83D3E1006683DA /* nohilite.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C30C83D3E1006683DA /* nohilite.lang */; };
+		446329F20C83D3E1006683DA /* number.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C40C83D3E1006683DA /* number.lang */; };
+		446329F30C83D3E1006683DA /* outlang.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C50C83D3E1006683DA /* outlang.lang */; };
+		446329F40C83D3E1006683DA /* pascal.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C60C83D3E1006683DA /* pascal.lang */; };
+		446329F50C83D3E1006683DA /* perl.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C70C83D3E1006683DA /* perl.lang */; };
+		446329F60C83D3E1006683DA /* php.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C80C83D3E1006683DA /* php.lang */; };
+		446329F70C83D3E1006683DA /* postscript.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329C90C83D3E1006683DA /* postscript.lang */; };
+		446329F80C83D3E1006683DA /* prolog.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329CA0C83D3E1006683DA /* prolog.lang */; };
+		446329F90C83D3E1006683DA /* python.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329CB0C83D3E1006683DA /* python.lang */; };
+		446329FA0C83D3E1006683DA /* ruby.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329CC0C83D3E1006683DA /* ruby.lang */; };
+		446329FB0C83D3E1006683DA /* script_comment.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329CD0C83D3E1006683DA /* script_comment.lang */; };
+		446329FC0C83D3E1006683DA /* sh.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329CE0C83D3E1006683DA /* sh.lang */; };
+		446329FD0C83D3E1006683DA /* sml.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329CF0C83D3E1006683DA /* sml.lang */; };
+		446329FE0C83D3E1006683DA /* sql.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329D00C83D3E1006683DA /* sql.lang */; };
+		446329FF0C83D3E1006683DA /* style.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329D10C83D3E1006683DA /* style.lang */; };
+		44632A000C83D3E1006683DA /* symbols.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329D20C83D3E1006683DA /* symbols.lang */; };
+		44632A010C83D3E1006683DA /* tcl.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329D30C83D3E1006683DA /* tcl.lang */; };
+		44632A020C83D3E1006683DA /* url.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329D40C83D3E1006683DA /* url.lang */; };
+		44632A030C83D3E1006683DA /* xml.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 446329D50C83D3E1006683DA /* xml.lang */; };
+		44632A0D0C83D485006683DA /* lang.map in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44632A0B0C83D485006683DA /* lang.map */; };
+		44632A0E0C83D485006683DA /* outlang.map in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44632A0C0C83D485006683DA /* outlang.map */; };
+		449C5B580CECCB0800E94924 /* slang.lang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 449C5B570CECCB0800E94924 /* slang.lang */; };
+		44A850CB0B74BB83008E6399 /* RNLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A850CA0B74BB83008E6399 /* RNLogging.h */; };
+		44A850D60B74BB9D008E6399 /* CSRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A850CC0B74BB9D008E6399 /* CSRegex.h */; };
+		44A850D70B74BB9D008E6399 /* CSRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A850CD0B74BB9D008E6399 /* CSRegex.m */; };
+		44A850D80B74BB9D008E6399 /* HighLightPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A850CE0B74BB9D008E6399 /* HighLightPlugin.h */; };
+		44A850D90B74BB9D008E6399 /* HighLightPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A850CF0B74BB9D008E6399 /* HighLightPlugin.m */; };
+		44A850DA0B74BB9D008E6399 /* HighLightSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A850D00B74BB9D008E6399 /* HighLightSettings.h */; };
+		44A850DB0B74BB9D008E6399 /* HighLightSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A850D10B74BB9D008E6399 /* HighLightSettings.m */; };
+		44A850DC0B74BB9D008E6399 /* HighLightTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A850D20B74BB9D008E6399 /* HighLightTextView.h */; };
+		44A850DD0B74BB9D008E6399 /* HighLightTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A850D30B74BB9D008E6399 /* HighLightTextView.m */; };
+		44A850DE0B74BB9D008E6399 /* NSTaskAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A850D40B74BB9D008E6399 /* NSTaskAdditions.h */; };
+		44A850DF0B74BB9D008E6399 /* NSTaskAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A850D50B74BB9D008E6399 /* NSTaskAdditions.m */; };
+		44A850E80B74E9CD008E6399 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 44A850E70B74E9CD008E6399 /* LICENSE */; };
+		44B416D50B450B58003E939E /* High-Light.nib in Resources */ = {isa = PBXBuildFile; fileRef = 44B416D30B450B58003E939E /* High-Light.nib */; };
+		44CF72EE0BA96AAF00ABC2D4 /* RNDropTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44CF72EC0BA96AAF00ABC2D4 /* RNDropTextView.h */; };
+		44CF72EF0BA96AAF00ABC2D4 /* RNDropTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF72ED0BA96AAF00ABC2D4 /* RNDropTextView.m */; };
+		44EE8D2F0BA7BE7400B1509E /* source-highlight in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8D2E0BA7BE7400B1509E /* source-highlight */; };
+		44EE8DCD0BA7C10700B1509E /* AUTHORS in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DC50BA7C10700B1509E /* AUTHORS */; };
+		44EE8DCE0BA7C10700B1509E /* ChangeLog in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DC60BA7C10700B1509E /* ChangeLog */; };
+		44EE8DCF0BA7C10700B1509E /* COPYING in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DC70BA7C10700B1509E /* COPYING */; };
+		44EE8DD00BA7C10700B1509E /* CREDITS in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DC80BA7C10700B1509E /* CREDITS */; };
+		44EE8DD10BA7C10700B1509E /* NEWS in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DC90BA7C10700B1509E /* NEWS */; };
+		44EE8DD20BA7C10700B1509E /* README in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DCA0BA7C10700B1509E /* README */; };
+		44EE8DD30BA7C10700B1509E /* THANKS in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DCB0BA7C10700B1509E /* THANKS */; };
+		44EE8DD40BA7C10700B1509E /* TODO.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8DCC0BA7C10700B1509E /* TODO.txt */; };
+		44EE8E710BA8535300B1509E /* default.style in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8E600BA8532900B1509E /* default.style */; };
+		44EE8E720BA8535300B1509E /* esc.style in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8E610BA8532900B1509E /* esc.style */; };
+		44EE8E730BA8535300B1509E /* style2.style in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8E620BA8532900B1509E /* style2.style */; };
+		44EE8E740BA8535300B1509E /* style3.style in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8E630BA8532900B1509E /* style3.style */; };
+		44EE8E750BA8535300B1509E /* texinfo.style in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44EE8E640BA8532900B1509E /* texinfo.style */; };
+		9C736B71094C726A001443E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3778116A0917CBE000E538D6 /* Localizable.strings */; };
+		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
+		9C736B85094C7280001443E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C736B84094C7280001443E6 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44D0010B0DEB424500B678DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86EC46EC0681018500EF9A10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C736B69094C726A001443E6;
+			remoteInfo = HighLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44EE8D2C0BA7BE4E00B1509E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "source-highlight/bin";
+			dstSubfolderSpec = 7;
+			files = (
+				44EE8D2F0BA7BE7400B1509E /* source-highlight in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EE8D5A0BA7BF6D00B1509E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "source-highlight/share/source-highlight";
+			dstSubfolderSpec = 7;
+			files = (
+				44632A0D0C83D485006683DA /* lang.map in CopyFiles */,
+				44632A0E0C83D485006683DA /* outlang.map in CopyFiles */,
+				44EE8E710BA8535300B1509E /* default.style in CopyFiles */,
+				44EE8E720BA8535300B1509E /* esc.style in CopyFiles */,
+				44EE8E730BA8535300B1509E /* style2.style in CopyFiles */,
+				44EE8E740BA8535300B1509E /* style3.style in CopyFiles */,
+				44EE8E750BA8535300B1509E /* texinfo.style in CopyFiles */,
+				446329D60C83D3E1006683DA /* bib.lang in CopyFiles */,
+				446329D70C83D3E1006683DA /* bison.lang in CopyFiles */,
+				446329D80C83D3E1006683DA /* c_comment.lang in CopyFiles */,
+				446329D90C83D3E1006683DA /* c_string.lang in CopyFiles */,
+				446329DA0C83D3E1006683DA /* caml.lang in CopyFiles */,
+				446329DB0C83D3E1006683DA /* changelog.lang in CopyFiles */,
+				446329DC0C83D3E1006683DA /* cpp.lang in CopyFiles */,
+				446329DD0C83D3E1006683DA /* csharp.lang in CopyFiles */,
+				446329DE0C83D3E1006683DA /* css.lang in CopyFiles */,
+				446329DF0C83D3E1006683DA /* default.lang in CopyFiles */,
+				446329E00C83D3E1006683DA /* diff.lang in CopyFiles */,
+				446329E10C83D3E1006683DA /* extreme_comment.lang in CopyFiles */,
+				446329E20C83D3E1006683DA /* extreme_comment2.lang in CopyFiles */,
+				446329E30C83D3E1006683DA /* extreme_comment3.lang in CopyFiles */,
+				446329E40C83D3E1006683DA /* flex.lang in CopyFiles */,
+				446329E50C83D3E1006683DA /* fortran.lang in CopyFiles */,
+				446329E60C83D3E1006683DA /* function.lang in CopyFiles */,
+				446329E70C83D3E1006683DA /* html.lang in CopyFiles */,
+				446329E80C83D3E1006683DA /* java.lang in CopyFiles */,
+				446329E90C83D3E1006683DA /* javascript.lang in CopyFiles */,
+				446329EA0C83D3E1006683DA /* langdef.lang in CopyFiles */,
+				446329EB0C83D3E1006683DA /* latex.lang in CopyFiles */,
+				446329EC0C83D3E1006683DA /* log.lang in CopyFiles */,
+				446329ED0C83D3E1006683DA /* logtalk.lang in CopyFiles */,
+				446329EE0C83D3E1006683DA /* lua.lang in CopyFiles */,
+				446329EF0C83D3E1006683DA /* m4.lang in CopyFiles */,
+				446329F00C83D3E1006683DA /* makefile.lang in CopyFiles */,
+				446329F10C83D3E1006683DA /* nohilite.lang in CopyFiles */,
+				446329F20C83D3E1006683DA /* number.lang in CopyFiles */,
+				446329F30C83D3E1006683DA /* outlang.lang in CopyFiles */,
+				446329F40C83D3E1006683DA /* pascal.lang in CopyFiles */,
+				446329F50C83D3E1006683DA /* perl.lang in CopyFiles */,
+				446329F60C83D3E1006683DA /* php.lang in CopyFiles */,
+				446329F70C83D3E1006683DA /* postscript.lang in CopyFiles */,
+				446329F80C83D3E1006683DA /* prolog.lang in CopyFiles */,
+				446329F90C83D3E1006683DA /* python.lang in CopyFiles */,
+				446329FA0C83D3E1006683DA /* ruby.lang in CopyFiles */,
+				446329FB0C83D3E1006683DA /* script_comment.lang in CopyFiles */,
+				446329FC0C83D3E1006683DA /* sh.lang in CopyFiles */,
+				449C5B580CECCB0800E94924 /* slang.lang in CopyFiles */,
+				446329FD0C83D3E1006683DA /* sml.lang in CopyFiles */,
+				446329FE0C83D3E1006683DA /* sql.lang in CopyFiles */,
+				446329FF0C83D3E1006683DA /* style.lang in CopyFiles */,
+				44632A000C83D3E1006683DA /* symbols.lang in CopyFiles */,
+				44632A010C83D3E1006683DA /* tcl.lang in CopyFiles */,
+				44632A020C83D3E1006683DA /* url.lang in CopyFiles */,
+				44632A030C83D3E1006683DA /* xml.lang in CopyFiles */,
+				446329910C83D363006683DA /* css_common.outlang in CopyFiles */,
+				446329920C83D363006683DA /* docbook.outlang in CopyFiles */,
+				446329930C83D363006683DA /* docbookdoc.outlang in CopyFiles */,
+				446329940C83D363006683DA /* esc.outlang in CopyFiles */,
+				446329970C83D363006683DA /* html.outlang in CopyFiles */,
+				446329950C83D363006683DA /* html_common.outlang in CopyFiles */,
+				446329960C83D363006683DA /* html_notfixed.outlang in CopyFiles */,
+				446329980C83D363006683DA /* htmlcss.outlang in CopyFiles */,
+				446329990C83D363006683DA /* htmldoc.outlang in CopyFiles */,
+				4463299A0C83D363006683DA /* htmltable.outlang in CopyFiles */,
+				4463299B0C83D363006683DA /* javadoc.outlang in CopyFiles */,
+				4463299C0C83D363006683DA /* latex.outlang in CopyFiles */,
+				4463299D0C83D363006683DA /* latexcolor.outlang in CopyFiles */,
+				4463299E0C83D363006683DA /* latexcolordoc.outlang in CopyFiles */,
+				4463299F0C83D363006683DA /* latexdoc.outlang in CopyFiles */,
+				446329A10C83D363006683DA /* texinfo.outlang in CopyFiles */,
+				446329A40C83D363006683DA /* xhtml.outlang in CopyFiles */,
+				446329A20C83D363006683DA /* xhtml_common.outlang in CopyFiles */,
+				446329A30C83D363006683DA /* xhtml_notfixed.outlang in CopyFiles */,
+				446329A50C83D363006683DA /* xhtmlcss.outlang in CopyFiles */,
+				446329A60C83D363006683DA /* xhtmldoc.outlang in CopyFiles */,
+				446329A70C83D363006683DA /* xhtmltable.outlang in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EE8DD70BA7C11A00B1509E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "source-highlight/doc";
+			dstSubfolderSpec = 7;
+			files = (
+				44EE8DCD0BA7C10700B1509E /* AUTHORS in CopyFiles */,
+				44EE8DCE0BA7C10700B1509E /* ChangeLog in CopyFiles */,
+				44EE8DCF0BA7C10700B1509E /* COPYING in CopyFiles */,
+				44EE8DD00BA7C10700B1509E /* CREDITS in CopyFiles */,
+				44EE8DD10BA7C10700B1509E /* NEWS in CopyFiles */,
+				44EE8DD20BA7C10700B1509E /* README in CopyFiles */,
+				44EE8DD30BA7C10700B1509E /* THANKS in CopyFiles */,
+				44EE8DD40BA7C10700B1509E /* TODO.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		377811660917CBDB00E538D6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		440127020B94882F009AC5E4 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		440B70930BA41CD8001495BE /* BUILDING_INSTRUCTIONS.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUILDING_INSTRUCTIONS.txt; sourceTree = "<group>"; };
+		44187CFC0B49657300717BD8 /* styles.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = styles.plist; sourceTree = "<group>"; };
+		44264D360B95498A00BF37E0 /* Readme.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = Readme.rtfd; sourceTree = "<group>"; };
+		4429B4880C80B77B00E188D7 /* donate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = donate.gif; path = images/donate.gif; sourceTree = "<group>"; };
+		44429FDF0B76252900EA3073 /* styles_v2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = styles_v2.plist; sourceTree = "<group>"; };
+		4442A0E70B799F7300EA3073 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		4442A0F60B7A569800EA3073 /* tags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = tags.plist; sourceTree = "<group>"; };
+		446329730C83D29F006683DA /* RWPluginUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWPluginUtilities.framework; path = /Applications/RapidWeaver.app/Contents/Frameworks/RWPluginUtilities.framework; sourceTree = "<absolute>"; };
+		4463297A0C83D362006683DA /* css_common.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = css_common.outlang; path = "externals/source-highlight/src/css_common.outlang"; sourceTree = "<group>"; };
+		4463297B0C83D362006683DA /* docbook.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = docbook.outlang; path = "externals/source-highlight/src/docbook.outlang"; sourceTree = "<group>"; };
+		4463297C0C83D362006683DA /* docbookdoc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = docbookdoc.outlang; path = "externals/source-highlight/src/docbookdoc.outlang"; sourceTree = "<group>"; };
+		4463297D0C83D362006683DA /* esc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = esc.outlang; path = "externals/source-highlight/src/esc.outlang"; sourceTree = "<group>"; };
+		4463297E0C83D362006683DA /* html_common.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = html_common.outlang; path = "externals/source-highlight/src/html_common.outlang"; sourceTree = "<group>"; };
+		4463297F0C83D362006683DA /* html_notfixed.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = html_notfixed.outlang; path = "externals/source-highlight/src/html_notfixed.outlang"; sourceTree = "<group>"; };
+		446329800C83D362006683DA /* html.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = html.outlang; path = "externals/source-highlight/src/html.outlang"; sourceTree = "<group>"; };
+		446329810C83D362006683DA /* htmlcss.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = htmlcss.outlang; path = "externals/source-highlight/src/htmlcss.outlang"; sourceTree = "<group>"; };
+		446329820C83D362006683DA /* htmldoc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = htmldoc.outlang; path = "externals/source-highlight/src/htmldoc.outlang"; sourceTree = "<group>"; };
+		446329830C83D362006683DA /* htmltable.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = htmltable.outlang; path = "externals/source-highlight/src/htmltable.outlang"; sourceTree = "<group>"; };
+		446329840C83D362006683DA /* javadoc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = javadoc.outlang; path = "externals/source-highlight/src/javadoc.outlang"; sourceTree = "<group>"; };
+		446329850C83D362006683DA /* latex.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = latex.outlang; path = "externals/source-highlight/src/latex.outlang"; sourceTree = "<group>"; };
+		446329860C83D362006683DA /* latexcolor.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = latexcolor.outlang; path = "externals/source-highlight/src/latexcolor.outlang"; sourceTree = "<group>"; };
+		446329870C83D362006683DA /* latexcolordoc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = latexcolordoc.outlang; path = "externals/source-highlight/src/latexcolordoc.outlang"; sourceTree = "<group>"; };
+		446329880C83D362006683DA /* latexdoc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = latexdoc.outlang; path = "externals/source-highlight/src/latexdoc.outlang"; sourceTree = "<group>"; };
+		446329890C83D362006683DA /* outlangtest.outlang.tmpl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = outlangtest.outlang.tmpl; path = "externals/source-highlight/src/lib/outlangtest.outlang.tmpl"; sourceTree = "<group>"; };
+		4463298A0C83D362006683DA /* texinfo.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = texinfo.outlang; path = "externals/source-highlight/src/texinfo.outlang"; sourceTree = "<group>"; };
+		4463298B0C83D362006683DA /* xhtml_common.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xhtml_common.outlang; path = "externals/source-highlight/src/xhtml_common.outlang"; sourceTree = "<group>"; };
+		4463298C0C83D362006683DA /* xhtml_notfixed.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xhtml_notfixed.outlang; path = "externals/source-highlight/src/xhtml_notfixed.outlang"; sourceTree = "<group>"; };
+		4463298D0C83D362006683DA /* xhtml.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xhtml.outlang; path = "externals/source-highlight/src/xhtml.outlang"; sourceTree = "<group>"; };
+		4463298E0C83D362006683DA /* xhtmlcss.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xhtmlcss.outlang; path = "externals/source-highlight/src/xhtmlcss.outlang"; sourceTree = "<group>"; };
+		4463298F0C83D362006683DA /* xhtmldoc.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xhtmldoc.outlang; path = "externals/source-highlight/src/xhtmldoc.outlang"; sourceTree = "<group>"; };
+		446329900C83D362006683DA /* xhtmltable.outlang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xhtmltable.outlang; path = "externals/source-highlight/src/xhtmltable.outlang"; sourceTree = "<group>"; };
+		446329A80C83D3E0006683DA /* bib.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = bib.lang; path = "externals/source-highlight/src/bib.lang"; sourceTree = "<group>"; };
+		446329A90C83D3E0006683DA /* bison.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = bison.lang; path = "externals/source-highlight/src/bison.lang"; sourceTree = "<group>"; };
+		446329AA0C83D3E0006683DA /* c_comment.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = c_comment.lang; path = "externals/source-highlight/src/c_comment.lang"; sourceTree = "<group>"; };
+		446329AB0C83D3E0006683DA /* c_string.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = c_string.lang; path = "externals/source-highlight/src/c_string.lang"; sourceTree = "<group>"; };
+		446329AC0C83D3E0006683DA /* caml.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = caml.lang; path = "externals/source-highlight/src/caml.lang"; sourceTree = "<group>"; };
+		446329AD0C83D3E0006683DA /* changelog.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = changelog.lang; path = "externals/source-highlight/src/changelog.lang"; sourceTree = "<group>"; };
+		446329AE0C83D3E0006683DA /* cpp.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = cpp.lang; path = "externals/source-highlight/src/cpp.lang"; sourceTree = "<group>"; };
+		446329AF0C83D3E0006683DA /* csharp.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = csharp.lang; path = "externals/source-highlight/src/csharp.lang"; sourceTree = "<group>"; };
+		446329B00C83D3E0006683DA /* css.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = css.lang; path = "externals/source-highlight/src/css.lang"; sourceTree = "<group>"; };
+		446329B10C83D3E0006683DA /* default.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = default.lang; path = "externals/source-highlight/src/default.lang"; sourceTree = "<group>"; };
+		446329B20C83D3E0006683DA /* diff.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = diff.lang; path = "externals/source-highlight/src/diff.lang"; sourceTree = "<group>"; };
+		446329B30C83D3E0006683DA /* extreme_comment.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = extreme_comment.lang; path = "externals/source-highlight/src/extreme_comment.lang"; sourceTree = "<group>"; };
+		446329B40C83D3E0006683DA /* extreme_comment2.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = extreme_comment2.lang; path = "externals/source-highlight/src/extreme_comment2.lang"; sourceTree = "<group>"; };
+		446329B50C83D3E0006683DA /* extreme_comment3.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = extreme_comment3.lang; path = "externals/source-highlight/src/extreme_comment3.lang"; sourceTree = "<group>"; };
+		446329B60C83D3E1006683DA /* flex.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = flex.lang; path = "externals/source-highlight/src/flex.lang"; sourceTree = "<group>"; };
+		446329B70C83D3E1006683DA /* fortran.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = fortran.lang; path = "externals/source-highlight/src/fortran.lang"; sourceTree = "<group>"; };
+		446329B80C83D3E1006683DA /* function.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = function.lang; path = "externals/source-highlight/src/function.lang"; sourceTree = "<group>"; };
+		446329B90C83D3E1006683DA /* html.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = html.lang; path = "externals/source-highlight/src/html.lang"; sourceTree = "<group>"; };
+		446329BA0C83D3E1006683DA /* java.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = java.lang; path = "externals/source-highlight/src/java.lang"; sourceTree = "<group>"; };
+		446329BB0C83D3E1006683DA /* javascript.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = javascript.lang; path = "externals/source-highlight/src/javascript.lang"; sourceTree = "<group>"; };
+		446329BC0C83D3E1006683DA /* langdef.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = langdef.lang; path = "externals/source-highlight/src/langdef.lang"; sourceTree = "<group>"; };
+		446329BD0C83D3E1006683DA /* latex.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = latex.lang; path = "externals/source-highlight/src/latex.lang"; sourceTree = "<group>"; };
+		446329BE0C83D3E1006683DA /* log.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = log.lang; path = "externals/source-highlight/src/log.lang"; sourceTree = "<group>"; };
+		446329BF0C83D3E1006683DA /* logtalk.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = logtalk.lang; path = "externals/source-highlight/src/logtalk.lang"; sourceTree = "<group>"; };
+		446329C00C83D3E1006683DA /* lua.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = lua.lang; path = "externals/source-highlight/src/lua.lang"; sourceTree = "<group>"; };
+		446329C10C83D3E1006683DA /* m4.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = m4.lang; path = "externals/source-highlight/src/m4.lang"; sourceTree = "<group>"; };
+		446329C20C83D3E1006683DA /* makefile.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = makefile.lang; path = "externals/source-highlight/src/makefile.lang"; sourceTree = "<group>"; };
+		446329C30C83D3E1006683DA /* nohilite.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = nohilite.lang; path = "externals/source-highlight/src/nohilite.lang"; sourceTree = "<group>"; };
+		446329C40C83D3E1006683DA /* number.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = number.lang; path = "externals/source-highlight/src/number.lang"; sourceTree = "<group>"; };
+		446329C50C83D3E1006683DA /* outlang.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = outlang.lang; path = "externals/source-highlight/src/outlang.lang"; sourceTree = "<group>"; };
+		446329C60C83D3E1006683DA /* pascal.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = pascal.lang; path = "externals/source-highlight/src/pascal.lang"; sourceTree = "<group>"; };
+		446329C70C83D3E1006683DA /* perl.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = perl.lang; path = "externals/source-highlight/src/perl.lang"; sourceTree = "<group>"; };
+		446329C80C83D3E1006683DA /* php.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = php.lang; path = "externals/source-highlight/src/php.lang"; sourceTree = "<group>"; };
+		446329C90C83D3E1006683DA /* postscript.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = postscript.lang; path = "externals/source-highlight/src/postscript.lang"; sourceTree = "<group>"; };
+		446329CA0C83D3E1006683DA /* prolog.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = prolog.lang; path = "externals/source-highlight/src/prolog.lang"; sourceTree = "<group>"; };
+		446329CB0C83D3E1006683DA /* python.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = python.lang; path = "externals/source-highlight/src/python.lang"; sourceTree = "<group>"; };
+		446329CC0C83D3E1006683DA /* ruby.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = ruby.lang; path = "externals/source-highlight/src/ruby.lang"; sourceTree = "<group>"; };
+		446329CD0C83D3E1006683DA /* script_comment.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = script_comment.lang; path = "externals/source-highlight/src/script_comment.lang"; sourceTree = "<group>"; };
+		446329CE0C83D3E1006683DA /* sh.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = sh.lang; path = "externals/source-highlight/src/sh.lang"; sourceTree = "<group>"; };
+		446329CF0C83D3E1006683DA /* sml.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = sml.lang; path = "externals/source-highlight/src/sml.lang"; sourceTree = "<group>"; };
+		446329D00C83D3E1006683DA /* sql.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = sql.lang; path = "externals/source-highlight/src/sql.lang"; sourceTree = "<group>"; };
+		446329D10C83D3E1006683DA /* style.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = style.lang; path = "externals/source-highlight/src/style.lang"; sourceTree = "<group>"; };
+		446329D20C83D3E1006683DA /* symbols.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = symbols.lang; path = "externals/source-highlight/src/symbols.lang"; sourceTree = "<group>"; };
+		446329D30C83D3E1006683DA /* tcl.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = tcl.lang; path = "externals/source-highlight/src/tcl.lang"; sourceTree = "<group>"; };
+		446329D40C83D3E1006683DA /* url.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = url.lang; path = "externals/source-highlight/src/url.lang"; sourceTree = "<group>"; };
+		446329D50C83D3E1006683DA /* xml.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = xml.lang; path = "externals/source-highlight/src/xml.lang"; sourceTree = "<group>"; };
+		44632A0B0C83D485006683DA /* lang.map */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = lang.map; path = "externals/source-highlight/src/lang.map"; sourceTree = "<group>"; };
+		44632A0C0C83D485006683DA /* outlang.map */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = outlang.map; path = "externals/source-highlight/src/outlang.map"; sourceTree = "<group>"; };
+		449C5B570CECCB0800E94924 /* slang.lang */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = slang.lang; path = "externals/source-highlight/src/slang.lang"; sourceTree = "<group>"; };
+		44A850CA0B74BB83008E6399 /* RNLogging.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RNLogging.h; path = src/RNLogging.h; sourceTree = "<group>"; };
+		44A850CC0B74BB9D008E6399 /* CSRegex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CSRegex.h; path = src/CSRegex.h; sourceTree = "<group>"; };
+		44A850CD0B74BB9D008E6399 /* CSRegex.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CSRegex.m; path = src/CSRegex.m; sourceTree = "<group>"; };
+		44A850CE0B74BB9D008E6399 /* HighLightPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HighLightPlugin.h; path = src/HighLightPlugin.h; sourceTree = "<group>"; };
+		44A850CF0B74BB9D008E6399 /* HighLightPlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HighLightPlugin.m; path = src/HighLightPlugin.m; sourceTree = "<group>"; };
+		44A850D00B74BB9D008E6399 /* HighLightSettings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HighLightSettings.h; path = src/HighLightSettings.h; sourceTree = "<group>"; };
+		44A850D10B74BB9D008E6399 /* HighLightSettings.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HighLightSettings.m; path = src/HighLightSettings.m; sourceTree = "<group>"; };
+		44A850D20B74BB9D008E6399 /* HighLightTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HighLightTextView.h; path = src/HighLightTextView.h; sourceTree = "<group>"; };
+		44A850D30B74BB9D008E6399 /* HighLightTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HighLightTextView.m; path = src/HighLightTextView.m; sourceTree = "<group>"; };
+		44A850D40B74BB9D008E6399 /* NSTaskAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NSTaskAdditions.h; path = src/NSTaskAdditions.h; sourceTree = "<group>"; };
+		44A850D50B74BB9D008E6399 /* NSTaskAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = NSTaskAdditions.m; path = src/NSTaskAdditions.m; sourceTree = "<group>"; };
+		44A850E70B74E9CD008E6399 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		44B416D40B450B58003E939E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = "English.lproj/High-Light.nib"; sourceTree = "<group>"; };
+		44B80E560D6A96A900C8C8DA /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44B80E5B0D6A984600C8C8DA /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44CF72EC0BA96AAF00ABC2D4 /* RNDropTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RNDropTextView.h; path = src/RNDropTextView.h; sourceTree = "<group>"; };
+		44CF72ED0BA96AAF00ABC2D4 /* RNDropTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = RNDropTextView.m; path = src/RNDropTextView.m; sourceTree = "<group>"; };
+		44D0011B0DEB42C300B678DD /* buildDMG.pl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.perl; name = buildDMG.pl; path = release/buildDMG.pl; sourceTree = "<group>"; };
+		44D0011C0DEB42C300B678DD /* finder_layout.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = finder_layout.txt; path = release/finder_layout.txt; sourceTree = "<group>"; };
+		44D0011D0DEB42C300B678DD /* nilrogsplace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nilrogsplace.jpg; path = release/nilrogsplace.jpg; sourceTree = "<group>"; };
+		44D0011E0DEB42C300B678DD /* Nilrogs place.url */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = "Nilrogs place.url"; path = "release/Nilrogs place.url"; sourceTree = "<group>"; };
+		44D0011F0DEB42C300B678DD /* SLA.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = SLA.r; path = release/SLA.r; sourceTree = "<group>"; };
+		44D001250DEB51E600B678DD /* User Manual.url */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = "User Manual.url"; path = "release/User Manual.url"; sourceTree = "<group>"; };
+		44EE8D1A0BA7BC5E00B1509E /* Nilrog's Place.url */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Nilrog's Place.url"; sourceTree = "<group>"; };
+		44EE8D2E0BA7BE7400B1509E /* source-highlight */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "source-highlight"; path = "externals/source-highlight-macosx/build/Release/source-highlight"; sourceTree = "<group>"; };
+		44EE8DC50BA7C10700B1509E /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = AUTHORS; path = "externals/source-highlight/AUTHORS"; sourceTree = "<group>"; };
+		44EE8DC60BA7C10700B1509E /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = ChangeLog; path = "externals/source-highlight/ChangeLog"; sourceTree = "<group>"; };
+		44EE8DC70BA7C10700B1509E /* COPYING */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = COPYING; path = "externals/source-highlight/COPYING"; sourceTree = "<group>"; };
+		44EE8DC80BA7C10700B1509E /* CREDITS */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CREDITS; path = "externals/source-highlight/CREDITS"; sourceTree = "<group>"; };
+		44EE8DC90BA7C10700B1509E /* NEWS */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = NEWS; path = "externals/source-highlight/NEWS"; sourceTree = "<group>"; };
+		44EE8DCA0BA7C10700B1509E /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = README; path = "externals/source-highlight/README"; sourceTree = "<group>"; };
+		44EE8DCB0BA7C10700B1509E /* THANKS */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = THANKS; path = "externals/source-highlight/THANKS"; sourceTree = "<group>"; };
+		44EE8DCC0BA7C10700B1509E /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = TODO.txt; path = "externals/source-highlight/TODO.txt"; sourceTree = "<group>"; };
+		44EE8E600BA8532900B1509E /* default.style */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = default.style; path = "externals/source-highlight/src/default.style"; sourceTree = "<group>"; };
+		44EE8E610BA8532900B1509E /* esc.style */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = esc.style; path = "externals/source-highlight/src/esc.style"; sourceTree = "<group>"; };
+		44EE8E620BA8532900B1509E /* style2.style */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = style2.style; path = "externals/source-highlight/src/style2.style"; sourceTree = "<group>"; };
+		44EE8E630BA8532900B1509E /* style3.style */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = style3.style; path = "externals/source-highlight/src/style3.style"; sourceTree = "<group>"; };
+		44EE8E640BA8532900B1509E /* texinfo.style */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = texinfo.style; path = "externals/source-highlight/src/texinfo.style"; sourceTree = "<group>"; };
+		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		9C736B80094C726A001443E6 /* High-Light.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "High-Light.rwplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C736B74094C726A001443E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */,
+				446329740C83D29F006683DA /* RWPluginUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44264D350B95498A00BF37E0 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				44EE8D1A0BA7BC5E00B1509E /* Nilrog's Place.url */,
+				44264D360B95498A00BF37E0 /* Readme.rtfd */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		44D001200DEB42CE00B678DD /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				44D001250DEB51E600B678DD /* User Manual.url */,
+				44D0011B0DEB42C300B678DD /* buildDMG.pl */,
+				44D0011C0DEB42C300B678DD /* finder_layout.txt */,
+				44D0011D0DEB42C300B678DD /* nilrogsplace.jpg */,
+				44D0011E0DEB42C300B678DD /* Nilrogs place.url */,
+				44D0011F0DEB42C300B678DD /* SLA.r */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		44D332480B4F08BD00884EAB /* source-highlight */ = {
+			isa = PBXGroup;
+			children = (
+				44EE8DBA0BA7C07D00B1509E /* doc */,
+				44EE8D320BA7BEA900B1509E /* bin */,
+				44EE8D330BA7BECB00B1509E /* share */,
+				44187CFC0B49657300717BD8 /* styles.plist */,
+				44429FDF0B76252900EA3073 /* styles_v2.plist */,
+				4442A0F60B7A569800EA3073 /* tags.plist */,
+			);
+			name = "source-highlight";
+			sourceTree = "<group>";
+		};
+		44EE8D320BA7BEA900B1509E /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				44EE8D2E0BA7BE7400B1509E /* source-highlight */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		44EE8D330BA7BECB00B1509E /* share */ = {
+			isa = PBXGroup;
+			children = (
+				44632A0B0C83D485006683DA /* lang.map */,
+				44632A0C0C83D485006683DA /* outlang.map */,
+				44EE8E650BA8533E00B1509E /* style */,
+				44EE8D610BA7BFD100B1509E /* lang */,
+				44EE8D600BA7BFBD00B1509E /* outlang */,
+			);
+			name = share;
+			sourceTree = "<group>";
+		};
+		44EE8D600BA7BFBD00B1509E /* outlang */ = {
+			isa = PBXGroup;
+			children = (
+				4463297A0C83D362006683DA /* css_common.outlang */,
+				4463297B0C83D362006683DA /* docbook.outlang */,
+				4463297C0C83D362006683DA /* docbookdoc.outlang */,
+				4463297D0C83D362006683DA /* esc.outlang */,
+				4463297E0C83D362006683DA /* html_common.outlang */,
+				4463297F0C83D362006683DA /* html_notfixed.outlang */,
+				446329800C83D362006683DA /* html.outlang */,
+				446329810C83D362006683DA /* htmlcss.outlang */,
+				446329820C83D362006683DA /* htmldoc.outlang */,
+				446329830C83D362006683DA /* htmltable.outlang */,
+				446329840C83D362006683DA /* javadoc.outlang */,
+				446329850C83D362006683DA /* latex.outlang */,
+				446329860C83D362006683DA /* latexcolor.outlang */,
+				446329870C83D362006683DA /* latexcolordoc.outlang */,
+				446329880C83D362006683DA /* latexdoc.outlang */,
+				446329890C83D362006683DA /* outlangtest.outlang.tmpl */,
+				4463298A0C83D362006683DA /* texinfo.outlang */,
+				4463298B0C83D362006683DA /* xhtml_common.outlang */,
+				4463298C0C83D362006683DA /* xhtml_notfixed.outlang */,
+				4463298D0C83D362006683DA /* xhtml.outlang */,
+				4463298E0C83D362006683DA /* xhtmlcss.outlang */,
+				4463298F0C83D362006683DA /* xhtmldoc.outlang */,
+				446329900C83D362006683DA /* xhtmltable.outlang */,
+			);
+			name = outlang;
+			sourceTree = "<group>";
+		};
+		44EE8D610BA7BFD100B1509E /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				446329A80C83D3E0006683DA /* bib.lang */,
+				446329A90C83D3E0006683DA /* bison.lang */,
+				446329AA0C83D3E0006683DA /* c_comment.lang */,
+				446329AB0C83D3E0006683DA /* c_string.lang */,
+				446329AC0C83D3E0006683DA /* caml.lang */,
+				446329AD0C83D3E0006683DA /* changelog.lang */,
+				446329AE0C83D3E0006683DA /* cpp.lang */,
+				446329AF0C83D3E0006683DA /* csharp.lang */,
+				446329B00C83D3E0006683DA /* css.lang */,
+				446329B10C83D3E0006683DA /* default.lang */,
+				446329B20C83D3E0006683DA /* diff.lang */,
+				446329B30C83D3E0006683DA /* extreme_comment.lang */,
+				446329B40C83D3E0006683DA /* extreme_comment2.lang */,
+				446329B50C83D3E0006683DA /* extreme_comment3.lang */,
+				446329B60C83D3E1006683DA /* flex.lang */,
+				446329B70C83D3E1006683DA /* fortran.lang */,
+				446329B80C83D3E1006683DA /* function.lang */,
+				446329B90C83D3E1006683DA /* html.lang */,
+				446329BA0C83D3E1006683DA /* java.lang */,
+				446329BB0C83D3E1006683DA /* javascript.lang */,
+				446329BC0C83D3E1006683DA /* langdef.lang */,
+				446329BD0C83D3E1006683DA /* latex.lang */,
+				446329BE0C83D3E1006683DA /* log.lang */,
+				446329BF0C83D3E1006683DA /* logtalk.lang */,
+				446329C00C83D3E1006683DA /* lua.lang */,
+				446329C10C83D3E1006683DA /* m4.lang */,
+				446329C20C83D3E1006683DA /* makefile.lang */,
+				446329C30C83D3E1006683DA /* nohilite.lang */,
+				446329C40C83D3E1006683DA /* number.lang */,
+				446329C50C83D3E1006683DA /* outlang.lang */,
+				446329C60C83D3E1006683DA /* pascal.lang */,
+				446329C70C83D3E1006683DA /* perl.lang */,
+				446329C80C83D3E1006683DA /* php.lang */,
+				446329C90C83D3E1006683DA /* postscript.lang */,
+				446329CA0C83D3E1006683DA /* prolog.lang */,
+				446329CB0C83D3E1006683DA /* python.lang */,
+				446329CC0C83D3E1006683DA /* ruby.lang */,
+				446329CD0C83D3E1006683DA /* script_comment.lang */,
+				446329CE0C83D3E1006683DA /* sh.lang */,
+				449C5B570CECCB0800E94924 /* slang.lang */,
+				446329CF0C83D3E1006683DA /* sml.lang */,
+				446329D00C83D3E1006683DA /* sql.lang */,
+				446329D10C83D3E1006683DA /* style.lang */,
+				446329D20C83D3E1006683DA /* symbols.lang */,
+				446329D30C83D3E1006683DA /* tcl.lang */,
+				446329D40C83D3E1006683DA /* url.lang */,
+				446329D50C83D3E1006683DA /* xml.lang */,
+			);
+			name = lang;
+			sourceTree = "<group>";
+		};
+		44EE8DBA0BA7C07D00B1509E /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				44EE8DC50BA7C10700B1509E /* AUTHORS */,
+				44EE8DC60BA7C10700B1509E /* ChangeLog */,
+				44EE8DC70BA7C10700B1509E /* COPYING */,
+				44EE8DC80BA7C10700B1509E /* CREDITS */,
+				44EE8DC90BA7C10700B1509E /* NEWS */,
+				44EE8DCA0BA7C10700B1509E /* README */,
+				44EE8DCB0BA7C10700B1509E /* THANKS */,
+				44EE8DCC0BA7C10700B1509E /* TODO.txt */,
+			);
+			name = doc;
+			sourceTree = "<group>";
+		};
+		44EE8E650BA8533E00B1509E /* style */ = {
+			isa = PBXGroup;
+			children = (
+				44EE8E600BA8532900B1509E /* default.style */,
+				44EE8E610BA8532900B1509E /* esc.style */,
+				44EE8E620BA8532900B1509E /* style2.style */,
+				44EE8E630BA8532900B1509E /* style3.style */,
+				44EE8E640BA8532900B1509E /* texinfo.style */,
+			);
+			name = style;
+			sourceTree = "<group>";
+		};
+		44EEF0020B10C2A500F5A51C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44A850CC0B74BB9D008E6399 /* CSRegex.h */,
+				44A850CD0B74BB9D008E6399 /* CSRegex.m */,
+				44A850CE0B74BB9D008E6399 /* HighLightPlugin.h */,
+				44A850CF0B74BB9D008E6399 /* HighLightPlugin.m */,
+				44A850D00B74BB9D008E6399 /* HighLightSettings.h */,
+				44A850D10B74BB9D008E6399 /* HighLightSettings.m */,
+				44A850D20B74BB9D008E6399 /* HighLightTextView.h */,
+				44A850D30B74BB9D008E6399 /* HighLightTextView.m */,
+				44A850D40B74BB9D008E6399 /* NSTaskAdditions.h */,
+				44A850D50B74BB9D008E6399 /* NSTaskAdditions.m */,
+				44CF72EC0BA96AAF00ABC2D4 /* RNDropTextView.h */,
+				44CF72ED0BA96AAF00ABC2D4 /* RNDropTextView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		44EEF0130B10C38800F5A51C /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				44A850CA0B74BB83008E6399 /* RNLogging.h */,
+			);
+			name = Extras;
+			sourceTree = "<group>";
+		};
+		86EC46E80681018500EF9A10 = {
+			isa = PBXGroup;
+			children = (
+				44EEF0020B10C2A500F5A51C /* Classes */,
+				44EEF0130B10C38800F5A51C /* Extras */,
+				4442A0E70B799F7300EA3073 /* AUTHORS */,
+				440B70930BA41CD8001495BE /* BUILDING_INSTRUCTIONS.txt */,
+				44A850E70B74E9CD008E6399 /* LICENSE */,
+				440127020B94882F009AC5E4 /* TODO */,
+				86EC483306812DE600EF9A10 /* Resources */,
+				86EC48B406813EDD00EF9A10 /* Frameworks */,
+				86EC479A06811BCE00EF9A10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86EC479A06811BCE00EF9A10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C736B80094C726A001443E6 /* High-Light.rwplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86EC483306812DE600EF9A10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4429B4880C80B77B00E188D7 /* donate.gif */,
+				9C736B84094C7280001443E6 /* Info.plist */,
+				3778116A0917CBE000E538D6 /* Localizable.strings */,
+				44B416D30B450B58003E939E /* High-Light.nib */,
+				44D332480B4F08BD00884EAB /* source-highlight */,
+				44264D350B95498A00BF37E0 /* doc */,
+				44D001200DEB42CE00B678DD /* Release */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		86EC48B406813EDD00EF9A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446329730C83D29F006683DA /* RWPluginUtilities.framework */,
+				86EC48AB06813ED400EF9A10 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9C736B6A094C726A001443E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A850CB0B74BB83008E6399 /* RNLogging.h in Headers */,
+				44A850D60B74BB9D008E6399 /* CSRegex.h in Headers */,
+				44A850D80B74BB9D008E6399 /* HighLightPlugin.h in Headers */,
+				44A850DA0B74BB9D008E6399 /* HighLightSettings.h in Headers */,
+				44A850DC0B74BB9D008E6399 /* HighLightTextView.h in Headers */,
+				44A850DE0B74BB9D008E6399 /* NSTaskAdditions.h in Headers */,
+				44CF72EE0BA96AAF00ABC2D4 /* RNDropTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9C736B69094C726A001443E6 /* HighLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "HighLight" */;
+			buildPhases = (
+				9C736B6A094C726A001443E6 /* Headers */,
+				9C736B6C094C726A001443E6 /* Resources */,
+				9C736B72094C726A001443E6 /* Sources */,
+				9C736B74094C726A001443E6 /* Frameworks */,
+				9C736B79094C726A001443E6 /* Rez */,
+				44EE8D2C0BA7BE4E00B1509E /* CopyFiles */,
+				44EE8D5A0BA7BF6D00B1509E /* CopyFiles */,
+				44EE8DD70BA7C11A00B1509E /* CopyFiles */,
+				9C736B7A094C726A001443E6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighLight;
+			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
+			productName = Blog;
+			productReference = 9C736B80094C726A001443E6 /* High-Light.rwplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86EC46EC0681018500EF9A10 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HighLight" */;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+			);
+			mainGroup = 86EC46E80681018500EF9A10;
+			productRefGroup = 86EC479A06811BCE00EF9A10 /* Products */;
+			projectDirPath = "";
+			targets = (
+				9C736B69094C726A001443E6 /* HighLight */,
+				445256760C2AB85600BC2CCF /* source-highlight */,
+				44D0010A0DEB423400B678DD /* Create DMG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C736B6C094C726A001443E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B71094C726A001443E6 /* Localizable.strings in Resources */,
+				9C736B85094C7280001443E6 /* Info.plist in Resources */,
+				44B416D50B450B58003E939E /* High-Light.nib in Resources */,
+				44187CFD0B49657300717BD8 /* styles.plist in Resources */,
+				44A850E80B74E9CD008E6399 /* LICENSE in Resources */,
+				44429FE00B76252900EA3073 /* styles_v2.plist in Resources */,
+				4442A0E80B799F7300EA3073 /* AUTHORS in Resources */,
+				4442A0F70B7A569800EA3073 /* tags.plist in Resources */,
+				4429B4890C80B77B00E188D7 /* donate.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		9C736B79094C726A001443E6 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		445256750C2AB85600BC2CCF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\necho \"Make sure that source-highlight is built.\"\ncd externals/source-highlight-macosx\nxcodebuild -target source-highlight -configuration Release\n\nexit $?";
+		};
+		44D001090DEB423400B678DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Only run this script if we are doing deployment builds\nif [ $BUILD_STYLE != \"Deployment\" ]; then\n  exit\nfi\n\n# Check if the volume is already mounted\nif [ -d \"/Volumes/High-Light\" ]; then\n  echo \"Error: Volume already mounted\"\n  exit 1\nfi\n\n# Create the DMG\nperl ${SRCROOT}/release/buildDMG.pl -dmgName High-Light \\\n                                    -buildDir ${SYMROOT} \\\n                                    -volName High-Light \\\n                                    -compressionLevel 9 \\\n                                    -slaRsrcFile ${SRCROOT}/release/SLA.r \\\n                                    -backgroundFile ${SRCROOT}/release/nilrogsplace.jpg \\\n                                    -osaFinderLayoutFile ${SRCROOT}/release/finder_layout.txt \\\n                                    -internetEnabled \\\n                                    ${CONFIGURATION_BUILD_DIR}/High-Light.rwplugin \\\n                                    ${SRCROOT}/release/Nilrogs\\ place.url \\\n                                    ${SRCROOT}/release/User\\ Manual.url\n\nif [ $? -ne 0 ]; then\n  exit 1\nfi\n\n# Rename the DMG\nmv ${SYMROOT}/High-Light.dmg ${SYMROOT}/High-Light_v${CURRENT_PROJECT_VERSION}.dmg\n";
+		};
+		9C736B7A094C726A001443E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# set\n\necho \"Removing the old plugin from the Application Support folder.\"\nrm -Rf ~/Library/Application\\ Support/RapidWeaver/${PRODUCT_NAME}.rwplugin\nif [ -d ~/Library/Application\\ Support/RapidWeaver/${PRODUCT_NAME}.rwplugin ]; then\n    echo \"Error: remove failed.\"\n    exit 1\nfi\n\necho \"Copying the plugin to the Application Support folder.\"\nif [ -d \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.rwplugin\" ]; then\n  cp -R \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.rwplugin\" ~/Library/Application\\ Support/RapidWeaver\n  echo \"installed to Applicaton support\"\nfi\n\nexit 0;";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C736B72094C726A001443E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A850D70B74BB9D008E6399 /* CSRegex.m in Sources */,
+				44A850D90B74BB9D008E6399 /* HighLightPlugin.m in Sources */,
+				44A850DB0B74BB9D008E6399 /* HighLightSettings.m in Sources */,
+				44A850DD0B74BB9D008E6399 /* HighLightTextView.m in Sources */,
+				44A850DF0B74BB9D008E6399 /* NSTaskAdditions.m in Sources */,
+				44CF72EF0BA96AAF00ABC2D4 /* RNDropTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D0010C0DEB424500B678DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C736B69094C726A001443E6 /* HighLight */;
+			targetProxy = 44D0010B0DEB424500B678DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3778116A0917CBE000E538D6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377811660917CBDB00E538D6 /* English */,
+				44B80E560D6A96A900C8C8DA /* Japanese */,
+				44B80E5B0D6A984600C8C8DA /* Italian */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		44B416D30B450B58003E939E /* High-Light.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B416D40B450B58003E939E /* English */,
+			);
+			name = "High-Light.nib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4452567A0C2AB87400BC2CCF /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "source-highlight";
+			};
+			name = Development;
+		};
+		4452567B0C2AB87400BC2CCF /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "source-highlight";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4452567C0C2AB87400BC2CCF /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "source-highlight";
+			};
+			name = Default;
+		};
+		44D001140DEB426300B678DD /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Create DMG";
+			};
+			name = Development;
+		};
+		44D001150DEB426300B678DD /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "Create DMG";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		44D001160DEB426300B678DD /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Create DMG";
+			};
+			name = Default;
+		};
+		9C72E61D088EEA07007CC3F7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CURRENT_BUILD_NUMBER = 26;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION_MAJOR).$(CURRENT_PROJECT_VERSION_MINOR)";
+				CURRENT_PROJECT_VERSION_MAJOR = 1;
+				CURRENT_PROJECT_VERSION_MINOR = 2.2;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Application/RapidWeaver.app/Contents/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"CURRENT_BUILD_NUMBER=$(CURRENT_BUILD_NUMBER)",
+					"CURRENT_PROJECT_VERSION=$(CURRENT_PROJECT_VERSION)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "High-Light";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		9C72E61E088EEA07007CC3F7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CURRENT_BUILD_NUMBER = 26;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION_MAJOR).$(CURRENT_PROJECT_VERSION_MINOR)";
+				CURRENT_PROJECT_VERSION_MAJOR = 1;
+				CURRENT_PROJECT_VERSION_MINOR = 2.2;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Application/RapidWeaver.app/Contents/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"CURRENT_BUILD_NUMBER=$(CURRENT_BUILD_NUMBER)",
+					"CURRENT_PROJECT_VERSION=$(CURRENT_PROJECT_VERSION)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "High-Light";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		9C72E61F088EEA07007CC3F7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CURRENT_BUILD_NUMBER = 26;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION_MAJOR).$(CURRENT_PROJECT_VERSION_MINOR)";
+				CURRENT_PROJECT_VERSION_MAJOR = 1;
+				CURRENT_PROJECT_VERSION_MINOR = 2.2;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Application/RapidWeaver.app/Contents/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
+					"CURRENT_BUILD_NUMBER=$(CURRENT_BUILD_NUMBER)",
+					"CURRENT_PROJECT_VERSION=$(CURRENT_PROJECT_VERSION)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "High-Light";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+		9C736B7C094C726A001443E6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/RWPluginUtilities.framework/",
+					"$(SRCROOT)/RWPluginUtilities.framework/",
+					"$(SRCROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/RapidWeaver.app/Contents/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_APPS_DIR)/RapidWeaver.app/Contents/Frameworks\"";
+				OTHER_CFLAGS = "-DENABLE_LOGGING";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "High-Light";
+				VERSIONING_SYSTEM = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Development;
+		};
+		9C736B7D094C726A001443E6 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/RWPluginUtilities.framework/",
+					"$(SRCROOT)/RWPluginUtilities.framework/",
+					"$(SRCROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/RapidWeaver.app/Contents/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_APPS_DIR)/RapidWeaver.app/Contents/Frameworks\"";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "High-Light";
+				VERSIONING_SYSTEM = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Deployment;
+		};
+		9C736B7E094C726A001443E6 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)/RWPluginUtilities.framework/",
+					"$(SRCROOT)/RWPluginUtilities.framework/",
+					"$(SRCROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_APPS_DIR)/RapidWeaver.app/Contents/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_APPS_DIR)/RapidWeaver.app/Contents/Frameworks\"";
+				OTHER_CFLAGS = "-DENABLE_LOGGING";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "High-Light";
+				VERSIONING_SYSTEM = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445256790C2AB87400BC2CCF /* Build configuration list for PBXAggregateTarget "source-highlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4452567A0C2AB87400BC2CCF /* Development */,
+				4452567B0C2AB87400BC2CCF /* Deployment */,
+				4452567C0C2AB87400BC2CCF /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		44D001130DEB426300B678DD /* Build configuration list for PBXAggregateTarget "Create DMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D001140DEB426300B678DD /* Development */,
+				44D001150DEB426300B678DD /* Deployment */,
+				44D001160DEB426300B678DD /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HighLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C72E61D088EEA07007CC3F7 /* Development */,
+				9C72E61E088EEA07007CC3F7 /* Deployment */,
+				9C72E61F088EEA07007CC3F7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "HighLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C736B7C094C726A001443E6 /* Development */,
+				9C736B7D094C726A001443E6 /* Deployment */,
+				9C736B7E094C726A001443E6 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86EC46EC0681018500EF9A10 /* Project object */;
+}

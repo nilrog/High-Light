@@ -1,0 +1,48 @@
+bgcolor "white"; // the background color for documents
+
+keyword blue b ; // for language keywords
+type darkgreen ; // for basic types
+string red f ; // for strings and chars
+regexp orange f ; // for strings and chars
+specialchar pink f ; // for special chars, e.g., \n, \t, \\
+comment brown i, noref; // for comments
+number purple ;	// for literal numbers
+preproc darkblue b ; // for preproc directives (e.g. #include, import)
+symbol darkred ; // for simbols (e.g. <, >, +)
+function black b; // for function calls and declarations
+cbracket red; // for block brackets (e.g. {, })
+todo bg:cyan b;	// for TODO and FIXME
+
+// line numbers
+linenum black f;
+
+// Internet related
+url blue u, f;
+
+// other elements for ChangeLog and Log files
+date blue b ;
+time, file darkblue b ;
+ip, name darkgreen ;
+
+// for Prolog, Perl...
+variable darkgreen ;
+
+// explicit for Latex
+italics darkgreen i;
+bold darkgreen b;
+underline darkgreen u;
+fixed green f;
+argument darkgreen;
+optionalargument purple;
+math orange;
+bibtex blue;
+
+// for diffs
+oldfile orange;
+newfile darkgreen;
+difflines blue; 
+
+// for css
+selector purple;
+property blue;
+value darkgreen i;

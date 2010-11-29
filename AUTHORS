@@ -1,0 +1,13 @@
+Authors of High-Light
+=====================
+
+Roger Nilsson <http://nilrogsplace.se>
+ * Designed and implemented High-Light.
+
+André Pang <http://www.algorithm.com.au/>
+ * Wrote the base for NSTaskAdditions.
+ * Wrote the Markup plugin which was the inspiration behind this plugin.
+ * Prepared the xcode project to build a universal binary of source-highlight.
+
+CocoaDev <http://cocoadev.com/>
+ * The source for CSRegex.

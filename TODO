@@ -1,0 +1,18 @@
+Custom CSS class wrapper
+------------------------
+Sometimes it is desireable to be able to put certain text parts inside a custom
+div-container. So this should be added to High-Light as an extra option. Maybe
+as a "Custom" option in the dropdown menu combined with two textfields.
+
+Fetching information from external sources
+------------------------------------------
+Using some kind of simple but extendable syntax combined with a language markup
+the source text should be fetched from outside the RWTextView. Possible sources
+are assets added to the current page, external files in the filesystem, remote
+URLs from HTTP and maybe FTP, code snippets from online code sources like
+snipplr.com etc.
+
+@<<asset:name_of_asset [encoding=utf-8|iso-8851-1]>>
+@<<file://path/file [encoding=utf-8|iso-8851-1]>>
+@<<http://[user[:password]@]host[:port]/path/file  [encoding=utf-8|iso-8851-1]>>
+@<<ftp://[user[:password]@]host[:port]/path/file [encoding=utf-8|iso-8851-1]>>

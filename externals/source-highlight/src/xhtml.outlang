@@ -1,0 +1,8 @@
+include "xhtml_common.outlang"
+
+doctemplate
+"<!-- Generator: $additional -->
+$header<pre><tt>"
+"</tt></pre>$footer
+"
+end

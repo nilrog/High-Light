@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>tag</key>
+		<string>Blockquote</string>
+		<key>end</key>
+		<string>&lt;/p&gt;&lt;/blockquote&gt;</string>
+		<key>start</key>
+		<string>&lt;blockquote&gt;&lt;p&gt;</string>
+	</dict>
+  <dict>
+		<key>tag</key>
+		<string>Code</string>
+		<key>end</key>
+		<string>&lt;/code&gt;</string>
+		<key>start</key>
+		<string>&lt;code&gt;</string>
+	</dict>
+  <dict>
+		<key>tag</key>
+		<string>Paragraph</string>
+		<key>end</key>
+		<string>&lt;/p&gt;</string>
+		<key>start</key>
+		<string>&lt;p&gt;</string>
+	</dict>
+</array>
+</plist>

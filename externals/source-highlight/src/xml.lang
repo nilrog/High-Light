@@ -1,0 +1,15 @@
+state preproc delim "<?xml" "?>" multiline begin
+  string delim "\"" "\"" escape "\\" multiline
+end
+
+comment delim "<!--" "-->" multiline nested
+
+keyword = '<(/)?[[:word:]:-]+(/)?>'
+
+state keyword delim '<(/)?[[:word:]:-]+' '(/)?>' multiline begin
+  type = '[^="[:blank:]>]+'
+  symbol = "="
+  string delim "\"" "\"" escape "\\" multiline
+end
+
+preproc = '&([[:alnum:]]+);'
